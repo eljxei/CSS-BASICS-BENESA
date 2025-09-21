@@ -1,0 +1,181 @@
+﻿body {
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #654EA3, #EAAFC8, #FFE29F);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.profile-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  max-width: 500px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+}
+
+
+.profile-header {
+  background: linear-gradient(135deg, #654EA3, #EAAFC8, #FFE29F);
+  color: white;
+  text-align: center;
+  padding: 40px 30px;
+}
+
+.name {
+  font-size: 2.5em;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 1.2em;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+
+.profile-content {
+  padding: 30px;
+}
+
+.about-section,
+.skills-section,
+.contact-section {
+  margin-bottom: 25px;
+}
+
+.about-section:last-child,
+.skills-section:last-child,
+.contact-section:last-child {
+  margin-bottom: 0;
+}
+
+
+h2 {
+  color: #2c3e50;
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 2px;
+}
+
+
+p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 1em;
+}
+
+
+.skills-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.skill-item {
+  background: #f8f9fa;
+  padding: 10px 15px;
+  border-radius: 25px;
+  text-align: center;
+  color: #555;
+  font-size: 0.9em;
+  border-left: 3px solid #667eea;
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.button-group {
+  text-align: center;   
+  margin-top: 20px;
+}
+
+.button-group button {
+  display: inline-block;
+  margin: 0 7px;   
+}
+
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #667eea;
+  border: 2px solid #667eea;
+}
+
+.btn-outline:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+  .button-group {
+    text-align: center;
+  }
+
+  .button-group button {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 250px;
+  }
+}
+final-styles.css
+Ipinapakita ang final-styles.css.
